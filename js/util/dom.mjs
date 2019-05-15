@@ -1,16 +1,16 @@
 class ManipulatableElement {
-  constructor(selector) {
-    const matches = document.querySelectorAll(selector)
-    this.elements = [...matches]
+  constructor (selector) {
+    const matches = document.querySelectorAll(selector);
+    this.elements = [ ...matches ];
   }
 
-  html(content) {
+  html (content) {
     this.elements.map((el) => {
-      el.innerHTML = content
-    })
+      el.innerHTML = content;
+    });
   }
 }
 
-export default function $(selector) {
-  return new ManipulatableElement(selector)
+export default function $ (selector) {
+  return new ManipulatableElement(selector);
 }

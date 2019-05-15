@@ -1,4 +1,4 @@
-export default function about() {
+export default function about () {
   return `
     <div id="about">
       <ul>
@@ -11,5 +11,5 @@ export default function about() {
       </ul>
       <a href="where-is-it.html">Check this error out</a>
     </div>
-  `
+  `;
 }
